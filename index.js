@@ -1,13 +1,15 @@
 // var names="abdul moiz i am doing js"
 // var word=names.split(" ")
-// console.log(word)
+// console.log(word)    let names="abdul moiz khanzada";
+
 
 // for(var i=0; i<word.length; i++){
 //     word[i]=word[i][0].toUpperCase() + word[i].substring(1)
 // }
 // console.log(word)
 // var strings=word.toString()
-// var replaces=strings.replace(/,/g," ")
+// var replaces=strings.replac
+// cons we can not use outside of this scope ole.log(names)(/,/g," ")
 // console.log(replaces)
 
 
@@ -319,9 +321,9 @@
 //we can write any number and get the table till 10(8,9,11,12s)
 // var numb=prompt("write table")
 // for(var i=1;i<=10;i++){
-//     console.log(numb +" x " + i + " = " + numb * i )
+    // console.log(numb +" x " + i + " = " + numb * i )
 // }
-// console.log(`${numb} x ${i} = ${numb*i}`) This is another way via template literals
+// console.log(`${numb} x ${i} = ${numb*i}`) //This is another way via template literals
 
 
 // function sum(a,b){  //<-- This block is parameter
@@ -363,7 +365,7 @@
 // console.log("The Answer of A,B and C is " + result)
 
 
-//if we just start from function till {} then it is anaymous function and 
+//if we just start from function keyword till {} then it is anaymous function and 
 // if we put varaible name then it will call anaonymus function expression 
 // var mainFunction=function (a,b) {
 //     return total=a+b;
@@ -380,3 +382,179 @@
 //     return get=a-b;
 // }
 // console.log(paras(20,10))
+
+// debugger;
+// let functions=function (a,b) {
+//    return a+b;    
+// }
+// let results=functions(20,100);
+// console.log(results);
+
+//let vs const vs var
+
+//fine
+// var names="abdul moiz";
+// console.log(names);
+
+// names="Abdul moiz attari";
+// console.log(names)
+
+//fine
+// let names="abdul moiz";
+// console.log(names);
+
+// names="Abdul moiz attari";
+// console.log(names)
+
+//it will give error we can one vaue with one variablename
+//  const names="abdul moiz";
+//  console.log(names);
+
+//  names="Abdul moiz attari";
+//  console.log(names)
+
+
+// function scoping() {
+//     let names="abdul moiz";
+//     console.log(names);
+    
+//    if(true){
+//     let lastName="attari";
+//     console.log("Inner scope " + lastName);
+//     console.log("Inner scope " + names)
+//    }
+//   console.log("outer " + lastName) //give an error we are calling outside
+// }
+// console.log(names) we can not use outside of this top of scope 
+// scoping()
+
+
+// function reuse() {
+//     let firstName="Abdul";
+//     console.log(firstName)
+//     firstName="Abdul moiz"
+//     console.log(firstName)
+//     if (true) {
+//        console.log("Now we are inner scope " + firstName)        
+//        let lastName="Abdul moiz khanzada"
+//        console.log(lastName)
+//     }
+//     console.log("last line " + firstName);
+//     // console.log(lastName); //error
+// }
+// reuse()
+
+//template literal
+// let table=prompt("write table")
+// for(let i=1; i<=10;i++){
+//     console.log(`${table} x ${i} =${table*i}`)
+// }
+
+//default parameter
+
+// function defaults(a,b=20,c=10) {
+//     return a+b,c;
+// }
+// console.log(defaults(20))
+
+//if we give one value in argument and req 2 or more then it will give us NaN
+//first value of argument assign to first parameter
+
+
+// function names(a,b=20) {
+//    return a/b;    
+// }
+// console.log(names(27,10))
+//if we write like this in default parameter then it wil get the values of argument only not from parameter value of 20 etc.
+
+// function names(a,b=10) {
+//     return a/b;    
+//  }
+//  console.log(names(27))
+
+
+// console.log(sums())
+// function sums(){
+//     let a=70,b=30
+//     return a+b
+// }
+
+//fat arrow function
+//arrow function ma phala define hota ha bad ma call hota ha
+
+// const arrow=() =>{
+//     let a=5,b=20;
+//     let result=a+b
+//     return `this is a value of A and B = ${result}`
+// }
+// console.log( arrow())
+
+
+// const arrow=() =>{
+//     let a=20,b=80
+//     return `this is a value of A and B = ${a*b}`
+// }
+// console.log( arrow())
+
+
+// const arrow=() =>{
+//     return `this is a value of A and B = ${(a=10)-(b=100)}`
+// }
+// console.log( arrow())
+
+
+// const arrow=() => `this is a value of A and B = ${(a=500)/(b=100)}`
+
+// console.log( arrow())
+
+// const arrow=(a,b) =>{
+//     return `this is a value of A and B = ${a+b}`
+// }
+// console.log(arrow(20,30))
+
+
+
+//Array 
+//new keyword make a new instance of this class
+//let  --> new instance of an array myFriends= new Array  <-- class
+
+
+
+// let myFriends= new Array;  <-- This is an optional now dirctly make an arrray
+// myFriends=["abdul moiz","abdul rafay","abdullah","shahrukh"];
+// console.log(myFriends)
+
+
+// let myNames=["Abdul","Moiz","Khanzada","Attari","Rajput"];
+// individually we access
+// console.log(myNames[1]);
+
+// console.log(myNames[myNames.length -1]);
+// console.log(myNames.length)
+// debugger;
+// let myNames=["Abdul","Moiz","Khanzada","Attari","Rajput"];
+//  for(let i=0;i<myNames.length;i++){
+//      console.log(myNames[i])
+//  }
+
+//Es6 for...in  and for...of
+//for in ma indexes nub show karta ha and for of ma array ka elments batata ha
+// let myNames=["Abdul","Moiz","Khanzada","Attari","Rajput"];
+// for(let elements in myNames){
+//     console.log(elements)
+// }
+
+// for(let elements of myNames){
+//     console.log(elements)
+// }
+
+// forEach() method  call a function for each element to an array
+// let myNames=["Abdul","Moiz","Khanzada","Attari","Rajput"];
+// myNames.forEach(function(elements,index,array){
+//     console.log(`${elements} value = ${index} and array is = ${array}`)
+// })
+
+// let myNames=["Abdul","Moiz","Khanzada","Attari","Rajput"];
+// myNames.forEach((elements,index,array) =>{
+//      console.log(`${elements} ${index} ${array}`)
+// })
