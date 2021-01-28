@@ -515,6 +515,7 @@
 
 
 //Array 
+
 //new keyword make a new instance of this class
 //let  --> new instance of an array myFriends= new Array  <-- class
 
@@ -548,7 +549,7 @@
 //     console.log(elements)
 // }
 
-// forEach() method  call a function for each element to an array
+// Array.prototype.forEach() method  call a function for each element to an array
 // let myNames=["Abdul","Moiz","Khanzada","Attari","Rajput"];
 // myNames.forEach(function(elements,index,array){
 //     console.log(`${elements} value = ${index} and array is = ${array}`)
