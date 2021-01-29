@@ -1,6 +1,6 @@
 // var names="abdul moiz i am doing js"
 // var word=names.split(" ")
-// console.log(word)    let names="abdul moiz khanzada";
+// console.log(word)   // let names="abdul moiz khanzada";
 
 
 // for(var i=0; i<word.length; i++){
@@ -8,8 +8,8 @@
 // }
 // console.log(word)
 // var strings=word.toString()
-// var replaces=strings.replac
-// cons we can not use outside of this scope ole.log(names)(/,/g," ")
+// var replaces=strings.replace()
+// // cons we can not use outside of this scope ole.log(names)(/,/g," ")
 // console.log(replaces)
 
 
@@ -559,3 +559,101 @@
 // myNames.forEach((elements,index,array) =>{
 //      console.log(`${elements} ${index} ${array}`)
 // })
+
+//These are for searching
+// let myFriends=["Abdul moiz","Abdul rafay","Abdul Malik","Abdullah","Rizwan","Abdul moiz"];
+// console.log(myFriends.indexOf("Abdul moiz")) --> always give us index number start from 0 
+// console.log(myFriends.indexOf("Abdul moiz",2)) //--> start from 2 index num till go end 
+
+
+//same as indexof but start from last index number
+// let myFriends=["Abdul moiz","Abdul rafay","Abdul Malik","Abdullah","Rizwan","Abdul moiz"];
+// console.log(myFriends.lastIndexOf("Abdul moiz"))
+// console.log(myFriends.lastIndexOf("Abdul rafay",4))
+
+//retrun true or false and find forward start from 0
+// let myFriends=["Abdul moiz","Abdul rafay","Abdul Malik","Abdullah","Rizwan"];
+// console.log(myFriends.includes("Abdul moiz"))
+// console.log(myFriends.includes("Abdullah",4))
+
+
+// let price=[200,300,340,400,450,700,900,1000];
+// const result=price.find((elements,index,array) =>{
+//     return elements < 450
+// })
+// console.log(result)
+
+// const result=price.find((elements) => elements < 450)
+// console.log(price.find((elements) => elements > 1150)) //result undefined
+
+// let price=[200,300,340,400,450,700,900,1000];
+
+// const result=price.findIndex((currentValue,index,array)=>{
+//     return currentValue >700
+// })
+// console.log(result)
+
+// const result=price.findIndex((currentValue) => currentValue < 450)
+// console.log(result)
+
+
+// const result=price.findIndex((currentValue) => currentValue < 100)
+// console.log(result) // result will -1
+
+//find ma condition satisfy nahi hoti ha ha tou undefined
+//findIndex ma condition satisfy nahi hoti ha tou -1 
+
+//filter // retrun new array of containing values
+// let price=[200,300,340,400,450,700,900,1000];
+// const result=price.filter((currentValue,index,array) =>{
+//     return currentValue < 560;
+// })
+// console.log(result)  
+
+
+// let price=[200,300,340,400,450,700,900,1000];
+// const result=price.filter(function(currentvalue){
+//     return currentvalue > 1200;
+
+// })
+// console.log(result);
+
+// let price=[200,300,340,400,450,700,900,1000];
+// const result=price.filter((currentvalue) =>{
+//     return currentvalue > 1200;
+
+// })
+// console.log(result); // result empty []
+
+
+// let para="my name is abdul moiz";
+// let result=para.split(" ")
+// console.log(result)
+// for(let element of result){
+//    element=element[0].toUpperCase() + element.substring(1)
+//    console.log(element)
+// }
+
+// let results=result.toString()
+// let replace=results.replace()
+// console.log(replace)
+
+//sort() method
+
+// let months=["jan","feb","march","april","may","june","augest","nov","dec"]
+// console.log(months.sort())
+
+//it give us incorrect answer when we do sorting to numbers,because it converts in string to number then compare
+// let arr1=[1,2,3,4,20,35,1000,99,22];
+// console.log(arr1.sort());
+
+const animals=["cat","cow","chicken","monkey","hen"]
+console.log(animals)
+//add one
+// const Adding=animals.push("bander")
+// console.log(animals)
+// console.log(Adding)
+//add multiple
+const Adding=animals.push("bander","lion","tigger")
+console.log(animals)
+console.log(Adding)
