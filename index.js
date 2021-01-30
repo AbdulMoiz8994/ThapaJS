@@ -531,7 +531,7 @@
 // console.log(myNames[1]);
 
 // console.log(myNames[myNames.length -1]);
-// console.log(myNames.length)
+ // console.log(myNames.length)
 // debugger;
 // let myNames=["Abdul","Moiz","Khanzada","Attari","Rajput"];
 //  for(let i=0;i<myNames.length;i++){
@@ -647,13 +647,286 @@
 // let arr1=[1,2,3,4,20,35,1000,99,22];
 // console.log(arr1.sort());
 
-const animals=["cat","cow","chicken","monkey","hen"]
-console.log(animals)
+//push() method
+// const animals=["cat","cow","chicken","monkey","hen"]
+// console.log(animals)
 //add one
 // const Adding=animals.push("bander")
 // console.log(animals)
 // console.log(Adding)
 //add multiple
-const Adding=animals.push("bander","lion","tigger")
-console.log(animals)
-console.log(Adding)
+// const Adding=animals.push("bander","lion","tigger")
+// console.log(animals)
+// console.log(Adding)
+
+//unsift() method
+
+// const names=["abdul","moiz","khanzada","malik","rafay"];
+// console.log(names);
+//adding one
+// const adding=names.unshift("abdullah")
+// console.log(names)
+// console.log(adding)
+
+//adding multiple
+// const adding=names.unshift("abdullah","rizwan","faizan")
+// console.log(names)
+// console.log(adding)
+
+//pop() method
+//remove from last retrun that removing elements
+// const names=["abdul","moiz","khanzada","malik","rafay"];
+// console.log(names);
+
+// const get=names.pop();
+// console.log(names.pop())
+// console.log(names)
+// console.log(get)
+
+//shift()
+//remove from starting  retrun that removing elements
+// const names=["abdul","moiz","khanzada","malik","rafay"];
+// console.log(names);
+
+// console.log(names.shift())
+// console.log(names.shift())
+// console.log(names)
+
+// const months=['jan','feb','march','april','june','july','augest'];
+
+// const addMonth=months.splice(months.length,0,'dec')
+// console.log(months)
+
+// console.log(addMonth)  //it gives us empty[] now because we are not delete anything from an array
+
+
+// const months=['jan','feb','march','april','june','july','augest'];
+
+// const updateMonth=months.splice(2,1,"March")
+// console.log(months)
+// console.log(updateMonth)
+
+// const indexOfMonth=months.indexOf("march");
+
+// if(indexOfMonth != -1){
+//    const updateMonth=months.splice(indexOfMonth,1,"March")
+//    console.log(months)
+
+// }else{
+//     console.log("Data does not find")
+// }
+
+
+
+
+// const months=['jan','feb','march','april','june','july','augest'];
+
+// const indexOfMonth=months.indexOf("june");
+// // console.log(indexOfMonth)
+// if(indexOfMonth != -1){
+//    const updateMonth=months.splice(indexOfMonth,1)
+//    console.log(months)
+//    console.log
+//    (updateMonth)
+
+// }else{
+//     console.log("Data does not find")
+// }
+
+
+// const indexOfMonth=months.indexOf("june");
+// console.log(indexOfMonth)
+// if(indexOfMonth != -1){
+//    const updateMonth=months.splice(indexOfMonth,Infinity)
+//    console.log(months)
+//    console.log
+//    (updateMonth)
+
+// }else{
+//     console.log("Data does not find")
+// }
+
+//map() method
+
+
+// const names=["abdul","moiz","khanzada","attari","malik","rafay"];
+
+// let result=names.map((currentValue,index,array)=>{
+//       return `The indexes are ${index} ${currentValue} and array ${array}`
+// })
+// console.log(result);
+// console.log(names);
+
+// const number=[24,30,45,62,72,56,83];
+// //it retruns array of true and false
+// let result=number.map((currentValue,index,array) =>{
+//     // return currentValue < 72
+//     return `The index no= ${index} and the value ${currentValue} belong to an array ${array}`
+// })
+// console.log(result)
+// console.log(number);
+
+// //it retruns undefined
+// let results=number.forEach((currentValue,index,array) =>{
+//      currentValue < 72
+// })
+// console.log(results)
+// console.log(number);
+
+//The map does not mutating orginal array ,but forEach does
+//we can use w multiple method with map method 
+
+
+//challanges
+//square of this numbers
+// debugger;
+//  let numbers=[25,36,49,64,81,100];
+
+//  let numbsqu=numbers.map((currentValue) =>{
+//     return Math.sqrt(currentValue)
+//  })
+// console.log(numbsqu)
+// console.log(numbers)
+
+// let numbers=[2,3,4,6,8];
+
+// let mul=numbers.map((currentValue) =>{
+//      return currentValue*2
+// }).filter((currentValue) =>{
+//       return currentValue >10
+// });
+// console.log(mul)
+// let numbers=[2,3,4,6,8];
+
+// debugger;
+// let mul=numbers.map((currentValue) => currentValue*2).filter((currentValue) =>currentValue >10).reduce((accumulator,currentValue) => accumulator +=currentValue);
+// console.log(mul)
+
+
+//reduce method
+// let numbers=[2,4,5,8];
+
+// let result=numbers.reduce((accumulator,currentValue) =>{
+//     //  return currentValue=accumulator + currentValue //we can write like this below 
+//     return accumulator +=currentValue
+// })
+// console.log(result)
+
+// let numbers=[2,4,5,8];
+//we can give inital value to accumulator like below 7
+// let result=numbers.reduce((accumulator,currentValue) =>{
+//     debugger;
+//     return accumulator *=currentValue
+// },7);
+// console.log(result)
+
+
+//This is two dimensional 2d array into array we make one dimensional
+// const arr=[
+//     ['zone1','zone2'],
+//     ['zone3','zone4'],
+//     ['zone5','zone6'],
+//     ['zone7','zone8'],
+// ]
+
+// let result=arr.reduce((accumulator,currentValue) =>{
+//     // debugger;
+//       return accumulator.concat(currentValue)
+// })
+// console.log(result)
+// console.log(arr)
+
+//The last nested array is not concatinating.we will see in ES2020 how to concate all values in one array only 
+// const arr=[
+//     ['zone1','zone2'],
+//     ['zone3','zone4'],
+//     ['zone5','zone6'],
+//     ['zone7','zone8',['zone9','zone10']],
+// ]
+
+// let result=arr.reduce((accumulator,currentValue) =>{
+//     // debugger;
+//       return accumulator.concat(currentValue)
+// })
+// console.log(result)
+// console.log(arr)
+
+// string js
+// let myName="Abdul moiz";
+// let myYoutube='Abdul moiz';
+
+// This is a string constructor
+// let fullName= new String("Abdul Moiz Attari")
+// console.log(fullName)
+
+// console.log(myYoutube);
+
+//retruns the length of string
+
+// let myName="Abdul moiz";
+// console.log(myName.length)
+
+// escape character
+//humara JS as a error na parkar sakyee tou ya ha during the text when we use special character
+
+// let text="My name is \"abdul moiz\" and I did my intermediate";
+// console.log(text)
+
+// alternative way we use single quote outside inside double
+// let text='My name is "abdul moiz" and I did my intermediate';
+// console.log(text)
+
+// Another way we use double quote outside inside single
+// let texts="My name is 'abdul moiz' and I did my intermediate";
+// console.log(texts)
+
+// finding  string in a string
+
+// let myName="I am abdul moiz";
+// console.log(myName.indexOf('abdul'))
+
+// let myName="I am abdul moiz";
+// console.log(myName.indexOf('i',3))
+
+//lastindexof start from last to see string's character
+// let myName="I am abdul moiz";
+// console.log(myName.lastIndexOf('m',10))
+
+//if string does not find answer will be -1 .In string the space also get index nub also 
+
+
+//serach() method.It can not get second position in method as indexof .If answer does not find -1 retrun
+// let myName="I am abdul moiz";
+// let result=myName.search("moiz");
+// console.log(result);
+//retrun the position of the match
+
+
+// let text="My name is abdul moiz and I did intermediate";
+//it will not change original value.The given end argument will not be include.
+// const result=text.slice(0)
+// console.log(result)
+
+//like here on 0 position M and in 1 y but it will not add remember
+// const result=text.slice(0,1)
+// console.log(result)
+
+
+// const result=text.slice(0,2)
+// console.log(result)
+
+//it will remove last 7 character
+// const result=text.slice(3,-7)
+// console.log(result)
+
+//challange in social media we can not more than 280 character,here we are doing same we have 300 but we use slice method.
+// let text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, expedita corporis numquam sed esse culpa dolore ipsa deserunt harum corrupti quaerat, blanditiis in id! Eligendi tempore possimus eius unde praesentium?Quod nobis ab repellat sed incidunt eveniet quaerat, beatae harum inventore nesciunt"
+// const result=text.slice(0,280)
+// console.log(result.length)
+// console.log(result)
+
+//sunString it is not support - minus numbers(negative) as we did in slice()
+let subStrings="Abdul, moiz, khanzada";
+let result=subStrings.substring(6);
+console.log(result)
+// jasa 6 arguments sa la kar end tak retrun karwado
