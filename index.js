@@ -4,7 +4,9 @@
 
 
 // for(var i=0; i<word.length; i++){
-//     word[i]=word[i][0].toUpperCase() + word[i].substring(1)
+//     // word[i]=word[i][0].toUpperCase() + word[i].substring(1)
+//     word[i]=word[i][0].toUpperCase().concat(word[i].substring(1)) //both are same
+
 // }
 // console.log(word)
 // var strings=word.toString()
@@ -975,6 +977,96 @@
 
 //property access [] it is just like an array but in string it is property access
 // let strings="Hello world";
-
 // let result=strings[2];
 // console.log(result)
+
+// let names="Abdul moiz"
+// let namesd="Abdul mOIz"
+
+// console.log(names.toUpperCase());
+// console.log(namesd.toLowerCase())
+
+// let fName="Abdul";
+// let lName="moiz";
+
+// console.log(fName + lName)
+// console.log(`${fName} ${lName}`) // this is best way
+// console.log(fName.concat(lName))
+// console.log(fName.concat(" ",lName)) //if we want to give space in concat method then we will use --> " ",
+
+//trim()remove whitespace from both side 
+// let myName="        abdul moiz       ";
+// let myName="        abdul      moiz       ";// not between the words space will remove 
+// console.log(myName.trim())
+
+// split() method convert string into array
+
+// let strings="a,b,c,d";
+// let strings="a,b | c,d";
+
+// console.log(strings.split(" "));
+// console.log(strings.split(","));
+// console.log(strings.split(" | ")); // make the parts
+
+//Date and Time
+//The date object is created with new date constructor
+//jab new  dekyee tou hum usi object ka constructor create kar rahee ha
+//new ka matlab ya ha hum ak new instance create kartee ha via Date class abhi ka liyee
+// let currentdate=new Date();
+// console.log(currentdate)
+
+// console.log(currentdate.toString())
+// console.log(currentdate.toLocaleString())//perfect time will give us locally of our country
+// console.log(Date.now())
+
+
+//There are seven arguments in Date object
+// let localTime= new Date(2021,01,1,7,15,30,0);
+// let localTime= new Date(2021,01,1,17,15,30,0);
+// console.log(localTime.toLocaleString())
+
+
+//new Date(datestring)
+// let localTimes= new Date("2021 octubar 20 10:50:45");
+// console.log(localTimes)
+// console.log(localTimes.toLocaleString())
+
+// console.log(Date.now())
+// let million=new Date(1612172345398);
+// console.log(million.toLocaleString())
+
+// let million=new Date(0);
+// console.log(million)// it will retrun use standered time and since 1970
+// console.log(million.toLocaleString())
+
+
+// let million=new Date(1000000000);
+// let million=new Date(86400000*2) //ak din ma itna second hotee gar do sa multiply karee ga tou 3 ayee ga ,beacuse 1 day ka ha
+// console.log(million.toLocaleString())
+//get date() methods
+// const dates= new Date()
+// //to get individual data
+// console.log(dates.toLocaleString())
+// console.log(dates.getFullYear())
+// console.log(dates.toLocaleDateString()) 
+// console.log(dates.getMonth()) //from 0 to 11
+// console.log(dates.getDate())
+// console.log(dates.getDay())
+
+
+//time() get dates
+
+// let dates=new Date();
+
+// console.log(dates.getTime()); //this time method will retrun the number in milliseconds since 1 jan 1970
+// console.log(dates.getHours())
+// console.log(dates.getMinutes())
+// console.log(dates.getSeconds())
+// console.log(dates.getMilliseconds())
+
+// for current date only
+// let date= new Date().toLocaleDateString()
+//for current date only
+let date= new Date().toLocaleTimeString()
+//date and time only
+// let date= new Date().toLocaleString()

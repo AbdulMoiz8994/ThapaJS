@@ -7,8 +7,34 @@
 
 </head>
 <body>
-    
+    <p>We are doing practice of Thapa Technical</p>
+    <button onclick="myFunction()">Clich here</button>
+    <p id="date"></p>
+    <p id="time"></p>
  <!-- delectus architecto doloribus consectetur ad exercitationem error temporibus voluptate animi quasi nostrum? Laborum quidem iusto neque adipisci dignissimos. -->
     <script src="index.js"></script>
+    <script>
+    //   function myFunction() {
+    //       let date=new Date();
+    //        date.getHours(5);
+    //     //    let date=new Date("2020 03 10 20:40:00");
+    //     //    date.toLocaleString()
+    //       document.getElementById("demo").innerHTML = date
+    //           }
+
+    let dates= new Date().toLocaleDateString();
+    document.getElementById("date").innerHTML = dates;
+
+    let times= new Date().toLocaleTimeString();
+    document.getElementById("time").innerHTML = times;
+
+    // (function(){
+    //      setInterval(()=>{
+    //          let date=new Date().toLocaleTimeString()
+        //  document.getElementById("demo").innerHTML = date
+
+    //      },1000)
+    // })();
+    </script>
 </body>
 </html>
