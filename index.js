@@ -780,7 +780,7 @@
 //challanges
 //square of this numbers
 // debugger;
-//  let numbers=[25,36,49,64,81,100];
+//  let numbers=[25,36,49,64,81,100,5];
 
 //  let numbsqu=numbers.map((currentValue) =>{
 //     return Math.sqrt(currentValue)
@@ -903,8 +903,9 @@
 
 
 // let text="My name is abdul moiz and I did intermediate";
-//it will not change original value.The given end argument will not be include.
+// it will not change original value.The given end argument will not be include.
 // const result=text.slice(0)
+// const result=text.slice(-5) //retrun last 5 character
 // console.log(result)
 
 //like here on 0 position M and in 1 y but it will not add remember
@@ -926,7 +927,54 @@
 // console.log(result)
 
 //sunString it is not support - minus numbers(negative) as we did in slice()
-let subStrings="Abdul, moiz, khanzada";
-let result=subStrings.substring(6);
-console.log(result)
+// let subStrings="Abdul, moiz, khanzada";
+// let result=subStrings.substring(8,-1); //start from 0 ondex till go 7 index
+// let result=subStrings.substring(0,8);
+// let result=subStrings.substring(8); //start from 8 index
+// console.log(result)
 // jasa 6 arguments sa la kar end tak retrun karwado
+
+
+// let strings="Abdul moiz, Abdul rafay, Abdul malik";
+// let result = strings.substring(11,-1) //negative shows that it starts from o index number
+// console.log(result)
+
+// let strings="Abdul moiz, Abdul rafay, Abdul malik";
+// let result=strings.substr(0,8);
+// let result=strings.substr(-4); //last 4 character will come in retrun 
+// let result=strings.substr(5,-8); //nothing will come
+// console.log(result)
+
+// let strings="abdul moiz, abdul rafay, abdul malik";
+
+// let result=strings.replace(/abdul/g,"Abdul"); //globally
+// let result=strings.replace("abdul","Abdul"); //by defaul it change first find word
+// let result=strings.replace("Abdul","Abdul"); //not change  case sensitive
+// console.log(result)
+// console.log(strings)
+
+
+//charAt() method
+//it retruns the value/string of index number which we give 
+// let  strings="abdul moiz, abdul rafay, abdul malik";
+
+// let result=strings.charAt(12);
+// let result=strings.charAt(-6);// nothing retrun
+// console.log(result)
+
+// let strings="Hello world";
+// let result= strings.charCodeAt(0);
+// console.log(result)
+
+//challange
+// let strings="Hello world";
+// let result=strings.length -1;
+// console.log(strings.charAt(result));
+// let finalresult=strings.charCodeAt(result); //resut 100 in uni-code
+// console.log(finalresult)
+
+//property access [] it is just like an array but in string it is property access
+// let strings="Hello world";
+
+// let result=strings[2];
+// console.log(result)
