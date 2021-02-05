@@ -928,7 +928,7 @@
 // console.log(result.length)
 // console.log(result)
 
-//sunString it is not support - minus numbers(negative) as we did in slice()
+//subString it is not support - minus numbers(negative) as we did in slice()
 // let subStrings="Abdul, moiz, khanzada";
 // let result=subStrings.substring(8,-1); //start from 0 ondex till go 7 index
 // let result=subStrings.substring(0,8);
@@ -1067,6 +1067,105 @@
 // for current date only
 // let date= new Date().toLocaleDateString()
 //for current date only
-let date= new Date().toLocaleTimeString()
+// let date= new Date().toLocaleTimeString()
 //date and time only
 // let date= new Date().toLocaleString()
+
+
+//There are set() method as well
+
+// now we do math object
+// math object allow us to perfrom differnet tasks with on numbers
+
+// console.log(Math.PI)
+
+//round method() after decimal if value is above or == 5 then result will covert to 3 into 4,if less then 5 then result will 3
+//retruns the value of x rounded to its nearest integer ,pos and neg values hoti ha usko integer khatyee ha
+// let num=3.721;
+// console.log(Math.round(num))
+
+//it is just like the 2**6
+// console.log(Math.pow(2,6))
+
+//give the square root //interview question
+// console.log(Math.sqrt(100)); 
+// console.log(Math.sqrt(25));
+// console.log(Math.sqrt(19));            
+
+//the math absolute method() allways retrun the positive value
+ 
+
+// let numbers=-55;
+// console.log(Math.abs(numbers));
+// console.log(Math.abs(-299));
+// console.log(Math.abs(4-10))
+
+// ceill() method give the increaing number
+// console.log(Math.ceil(4.4)) 
+// console.log(Math.ceil(4.58)) 
+// console.log(Math.ceil(4.1)) 
+// console.log(Math.ceil(99.9)) 
+// console.log(Math.round(4.4)) 
+// console.log(Math.ceil(-4.9)) //-4
+
+
+//floor() method  
+// console.log(Math.floor(4.4)) 
+// console.log(Math.floor(4.9)) 
+// console.log(Math.floor(4.2)) 
+// console.log(Math.floor(4.7)) 
+// console.log(Math.floor(-4.4)) //-5
+
+// min and max method() 
+//max find the higest value
+//min find the lowest value
+// console.log(Math.max(0,1,100,-200))// asnwer 100
+// console.log(Math.min(0,100,30,-1000)) //answer -1000
+
+
+//evertime it will give us diff values from 0 to 1
+// console.log(Math.ceil( Math.random()*10))
+// console.log(Math.random()*10)
+// console.log(Math.floor( Math.random()*10))
+
+//math.trunc() retruns the integer ,which is before decimal
+ //decimal sa phala values deyee ga kuch bi do chahyee neg and pos
+// console.log(Math.trunc(4.9))
+// console.log(Math.trunc(99.9)) 
+// console.log(Math.floor(-99.91))
+
+// practice time
+// if the argument is positive ,math.trunc() is equavalent to math.floor()
+//if in math.trunc(-99) there is negative value it will work like math.ceil() or equavalent
+
+//interview question diff trunc and floor ,trunc ceil and round
+ 
+//positive
+// console.log(Math.trunc(99.9)) 
+// console.log(Math.floor(99.91))
+// //negative
+// console.log(Math.trunc(-99.9)) 
+// console.log(Math.ceil(-99.9))
+
+
+// DOM and BOM
+
+//basically Document object Model is the child of windows.And we play in DOM with html elements 
+//and also Browser object Model is the child of windows. 
+// In Bom we have functions alert/confirm/prompt are the part of BOM ,they are not directly part of document
+
+//BOM Example
+
+// alert(location.href)  //give the current website address
+// if (confirm("Want to Visit GOOGLE")) {
+//    location.href=("https://www.google.com/")    //redirect to above website to this website 
+// }
+
+
+
+//In DOM 
+//we can check that whether an element has child node or not?
+// via .haschildNodes()
+
+//how to find child in DOM Tree
+// four ways
