@@ -1169,3 +1169,11 @@
 
 //how to find child in DOM Tree
 // four ways
+
+
+//DOM
+// console.log( document.getElementsByClassName('para'))
+// console.log( document.getElementsByTagName('p'))
+
+
+// console.log(document.getElementsByName('gender'))

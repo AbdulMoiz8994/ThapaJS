@@ -7,14 +7,33 @@
 
 </head>
 <body>
-    <p>We are doing practice of Thapa Technical</p>
+    <!-- <p>We are doing practice of Thapa Technical</p>
     <button onclick="myFunction()">Clich here</button>
     <p id="date"></p>
-    <p id="time"></p>
+    <p id="time"></p> -->
+
      <!-- <button onclick="callback()">GO Back</button> -->
  <!-- delectus architecto doloribus consectetur ad exercitationem error temporibus voluptate animi quasi nostrum? Laborum quidem iusto neque adipisci dignissimos. -->
+
+<h1 id="heading">This is Thapa Technical</h1>
+ <button onclick="OnClick()">Click me</button>
+ <!-- <input type="radio" name="gender"> -->
+ <p class="para">This is para</p>
+ <p class="para">This is second para</p>
+
+<ul>
+    <li id=php>PHP</li>
+    <li>HTML</li>
+    <li class="web-page">CSS</li>
+    <li class="web-page">JS</li>
+</ul>
+
     <script src="index.js"></script>
     <script>
+
+
+
+
     //   function myFunction() {
     //       let date=new Date();
     //        date.getHours(5);
@@ -23,11 +42,11 @@
     //       document.getElementById("demo").innerHTML = date
     //           }
 
-    let dates= new Date().toLocaleDateString();
-    document.getElementById("date").innerHTML = dates;
+    // let dates= new Date().toLocaleDateString();
+    // document.getElementById("date").innerHTML = dates;
 
-    let times= new Date().toLocaleTimeString();
-    document.getElementById("time").innerHTML = times;
+    // let times= new Date().toLocaleTimeString();
+    // document.getElementById("time").innerHTML = times;
 
     // (function(){
     //      setInterval(()=>{
@@ -40,6 +59,30 @@
     // function callback(){
     //     window.history.back()
     // }
+
+
+    //DOM
+    // function OnClick() {
+    //     document.getElementById("heading").innerHTML="This is Abdul moiz Chaneel"        
+    // }
+
+    //we can also by taking reference
+    // function OnClick() {
+    //     const headingChange=document.getElementById('heading')
+    //     headingChange.innerHTML="hell Abdul moiz"        
+    // }
+
+
+    // console.log(document.getElementsByName('gender'))
+    
+    //we can give class and id also in queryselector in id #heading
+    // console.log(document.querySelector('.para').innerHTML="I want to do change again") //it will chnage our first class para
+
+    //It tell us how many elements
+    // console.log(document.querySelectorAll('.para'))
+
+
+
     </script>
 </body>
 </html>
