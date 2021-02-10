@@ -15,10 +15,10 @@
      <!-- <button onclick="callback()">GO Back</button> -->
  <!-- delectus architecto doloribus consectetur ad exercitationem error temporibus voluptate animi quasi nostrum? Laborum quidem iusto neque adipisci dignissimos. -->
 
-<h1 id="heading">This is Thapa Technical</h1>
- <button onclick="OnClick()">Click me</button>
+<!-- <h1 id="heading">This is Thapa Technical</h1>
+ <button onclick="OnClick()">Click me</button> -->
  <!-- <input type="radio" name="gender"> -->
- <p class="para">This is para</p>
+ <!-- <p class="para">This is para</p>
  <p class="para">This is second para</p>
 
 <ul>
@@ -28,10 +28,69 @@
     <li class="web-page">JS</li>
 </ul>
 
-    <script src="index.js"></script>
+
+
+    <script src="index.js"></script> -->
+
+<!-- Events -->
+    <!-- <div>
+     <h1>HeLlo World This is abdul moiz</h1>
+     <button onClick="alert('Here We are doing practice of alert event')">Update Button</button>
+    </div>
+<div>
+    <h1>Hell Events</h1>
+    <button onclick="Functions()">update Syntax</button>
+</div>
+<div>
+    <h1>Events Third Way</h1>
+    <button id="values">Update values</button>
+</div> -->
+<div>
+    <h1>Event forth way latest</h1>
+    <button id="forth">Update Syntax</button>
+</div>
     <script>
 
+        //second way
+//  Functions=() =>{ 
+//    alert("Hello This is half of HTML and Half Js")
+//  }
+   
+// const Values=document.getElementById('values')
 
+// //when we call events on click function then it overwrite the values nad give only last condition
+// Values.onclick=() =>{
+//     alert("Now we are updateing the values on id attribute and also calling function in script tag")
+// }
+     
+// Values.onclick=() =>{
+//     console.log("Now we are updateing the values on id attribute and also calling function in script tag")
+// }
+
+// //In This function we have not like this,it retruns us as many time as we write code
+// let fourth=document.querySelector("#forth")
+
+// fourth.addEventListener('click', () =>{
+//     alert("We are using query selector and call function inside the function via addeventlistener")
+// })
+
+// let fourths=document.querySelector("#forth")
+
+// fourths.addEventListener('click', () =>{
+//     console.log("We are using query selector and call function inside the function via addeventlistener")
+// })
+
+
+
+let eventsObj=document.querySelector("#forth")
+
+const Functions=() =>{
+   console.log(event)
+   console.log(event.target)
+   console.log(event.type)
+}
+//What is the type and in second we do anaoymus function
+eventsObj.addEventListener('click', Functions)
 
 
     //   function myFunction() {
