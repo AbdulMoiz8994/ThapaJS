@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thapa Technical</title>
+<style>
+    #box{
+       border: 20px solid;        
+    }
+</style>
 
+
+<script src="index.js"></script>
 </head>
 <body>
+
     <!-- <p>We are doing practice of Thapa Technical</p>
     <button onclick="myFunction()">Clich here</button>
     <p id="date"></p>
@@ -46,10 +54,306 @@
     <button id="values">Update values</button>
 </div> -->
 <div>
-    <h1>Event forth way latest</h1>
-    <button id="forth">Update Syntax</button>
-</div>
-    <script>
+    <!-- <h1>Event forth way latest</h1> -->
+    <!-- <button onclick="Checkevent()" id="forth">Update Syntax</button> -->
+<!-- <p id='p' onmousedown="mouseDown()" onmouseup="mouseup()">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis illum neque praesentium voluptatem illo. Ipsa exercitationem accusamus porro aliquid doloribus quam dolores distinctio, dolorum hic consequatur consequuntur facilis odit corporis!</p> -->
+<!-- <p id="p" onmousedown="mouseDown()" onmouseup="mouseUp()">hello World We are doing work</p>
+
+<div>
+    <input type="text" onkeypress="keypress()"  onkeydown="keyDown()" onkeyup="keyUp()">
+    <p id="boxes"></p>
+</div> -->
+
+<!-- <input type="text" id="name"> --> 
+<!-- <select name="icecreams" id="icecreams" onchange="ChangeFunction()"> -->
+    <!--  <select name="icecreams" id="icecreams"> -->
+<!-- 
+    <option value="">Select One</option>
+  <option value="chocolate">Chocolate</option>
+  <option value="brown">Brown</option>
+  <option value="Balck">Black</option>
+</select>
+<h1 id="result"></h1> -->
+
+<!-- <h1>Show My Name </h1> -->
+<!-- <p id="myName"></p> -->
+<!-- <input type="text" id="myNames" > -->
+<!-- <br> -->
+<!-- <button id='onclick' onclick="onCicks()" >Input Box of On Click</button> -->
+<!-- <h2 id="results"></h2> -->
+<!-- </div> -->
+
+
+<!-- 
+<h1>We are giving our name on after one second on scren</h1>
+<h2 id="myNames"></h2>
+<button id="btn">Click Here</button> -->
+
+    <!-- <button onclick='myVar = setTimeout(() => alert("moiz"),1000)'> -->
+
+    <!-- <button onclick="myVar = setTimeout(setTimeOut,1000)">
+       Start
+    </button>
+    <button onclick="clearTimeout(myVar)">Stop</button>
+</div> -->
+
+<!-- <div>
+    <p id="increment">we are doing counting</p>
+    <button id="btn1">Start</button>
+    <button id="btn2">stop</button>
+</div> -->
+
+<!-- <div>
+    <p>We are Giving our Name</p>
+    <h1 id="increment"></h1>
+    <button id="btn1" onclick='myVar = setTimeout(() => alert("moiz"),1000)'>Click here</button>
+    <button id="btn2" onclick="clearTimeout(myVar)">Stop</button>
+</div> -->
+
+<script>
+
+
+// const Numb=document.getElementById("increment")
+// const btns=document.getElementById("btn1")
+// const btns2=document.getElementById("btn2")
+
+// let num=0;
+// let timeClearRef;
+// btns.onclick=(() =>{
+//     Numb.innerHTML= "Loading..."
+//            setInterval(() =>{
+//             timeClearRef=   Numb.innerHTML= `${num}`
+//           num++
+//            },1000)
+// })  
+
+// btns2.onclick=(() =>{
+//     clearInterval(timeClearRef)
+// })
+
+
+//This is setTimout and andclearTimeout
+// const Names=document.getElementById("Name")
+// const  btns=document.getElementById("btn")
+// const btns2=document.querySelector("#btn2")
+
+// let timeStop;
+
+// function myFunction() {
+//     Names.innerHTML="Loading..."
+//     timeStop =setInterval(() =>{
+//        Names.innerHTML="Abdul moiz"
+//     },2000)
+// }
+
+
+
+// btns.addEventListener('click',myFunction)
+
+// btns2.addEventListener('click',() =>{
+//     clearTimeout(timeStop)
+// })
+
+
+// setIterval and stopInterval
+// const stopNumber=document.getElementById("increment")
+// const startInterval=document.getElementById("btn1")
+// const stopInterval=document.getElementById("btn2")
+
+// let num=0
+// let timeRef;
+
+
+// startInterval.onclick=(() =>{
+//     stopNumber.innerHTML="Loading..."
+//     setInterval(() =>{
+//      stopNumber.innerHTML=`${num}`
+//      num++
+//     },1000)
+// })
+
+// stopInterval.onclick=(() =>{
+//     clearInterval(timeRef)
+// }) 
+// stopInterval.addEventListener('click',() => clearInterval(timeRef))
+
+
+
+// function setTimeOut() {
+//     alert("hello Moiz ")
+// }
+
+
+
+//setTimeout()
+// const myName=document.getElementById("myNames")
+// const btns=document.getElementById("btn")
+
+// btns.onclick=() =>{
+//     myName.innerHTML= "Laoding..."
+
+//     setTimeout(() =>{
+//           myName.innerHTML= "Abdul Moiz"
+//     },1000)
+// }
+
+
+
+// const onCicks=() =>{
+    // const Input=document.getElementById("myNames").value
+    // const btn=document.getElementById("onclick")
+//     const results=document.getElementById("results")
+//     results.innerHTML=`${Input}`
+// }
+
+
+
+
+
+
+
+
+//onclick
+//   const onClick=document.getElementById("onclick")
+// onClick.onclick=(() =>{
+//     alert("This is first way")
+// })
+// onClick.onclick(() =>{
+//     alert("This is first way")
+// })
+// onClick.onclick(() =>{
+//     alert("This is third way")
+// })
+//addeventListener
+
+
+
+
+// const eventListener=document.getElementById("onclick");
+
+// eventListener.addEventListener('click',() =>{
+//     alert("first method")
+// })
+
+// eventListener.addEventListener('click',() =>{
+//     alert("second method")
+// })
+
+// const callbackfunction=()=>{
+//     alert("This is call back separate function")
+// }
+// eventListener.addEventListener('click', callbackfunction) 
+
+
+
+
+
+
+
+
+
+// onchange events
+// const ChangeFunction=() =>{
+//   const inputname=  document.getElementById("name").value
+  
+//  const optionvalue=   document.getElementById("icecreams").value
+
+// const result=document.querySelector("#result")
+// result.innerHTML=`Mr ${inputname} and select ${optionvalue}`
+
+//     console.log(`Mr ${inputname} and select ${optionvalue}`)
+// }
+
+// //add event listener
+//  const iceCreams= document.getElementById("icecreams")
+
+//  iceCreams.addEventListener('change',() =>{
+
+//       const inputname=  document.getElementById("name").value
+  
+//  const optionvalue=   document.getElementById("icecreams").value
+// const result=document.querySelector("#result") 
+// result.innerHTML=`Mr ${inputname} and select ${optionvalue}`
+
+//  });
+
+
+
+    
+//keyboard events
+//     const keypress=() => {
+//     document.getElementById("boxes").innerHTML= `key Pressed ${event.key} and the key code is ${event.code}`
+// }
+
+// const keyDown=() => {
+//     document.getElementById("boxes").innerHTML= `key is down`
+// }
+
+
+// const keyUp=() => {
+//     document.getElementById("boxes").innerHTML= `key is up`
+// }
+
+//mouse events
+
+//  const mouseevents=document.getElementById("boxes")
+
+// mouseevents.addEventListener('mouseenter',() =>{
+//    mouseevents.style.background="yellow"
+//    console.log("This is mouse events mouse enter")
+// })
+
+// mouseevents.addEventListener('mouseleave',() =>{
+//     mouseevents.style.background="blue"
+//     console.log("We did enetr mouse leave")
+// })
+    
+// const Checkevent=() =>{
+
+// // alert("this is alert") 
+// console.log(event)
+// console.log(event.target)
+// console.log(event.type)
+
+// }
+
+
+// the mousedown button means button preesed
+// function mouseDown(){
+//     document.getElementById("p").style.color="blue"
+// }
+// function mouseup(){
+//     document.getElementById('p').style.color="red"
+// }
+
+// let mouseEvent=document.querySelector("#box");
+
+// mouseEvent.addEventListener('mouseenter',() =>{
+//     mouseEvent.style.color="blue";
+//     console.log("enetr");
+// })
+
+// mouseEvent.addEventListener('mouseleave',() =>{
+//     mouseEvent.style.color = 'red';
+//     console.log("leave");
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         //second way
 //  Functions=() =>{ 
@@ -82,15 +386,15 @@
 
 
 
-let eventsObj=document.querySelector("#forth")
+// let eventsObj=document.querySelector("#forth")
 
-const Functions=() =>{
-   console.log(event)
-   console.log(event.target)
-   console.log(event.type)
-}
-//What is the type and in second we do anaoymus function
-eventsObj.addEventListener('click', Functions)
+// const Functions=() =>{
+//    console.log(event)
+//    console.log(event.target)
+//    console.log(event.type)
+// }
+//What is the type and in second we do anaoymus function callback function
+// eventsObj.addEventListener('click', Functions)
 
 
     //   function myFunction() {

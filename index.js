@@ -2,7 +2,6 @@
 // var word=names.split(" ")
 // console.log(word)   // let names="abdul moiz khanzada";
 
-
 // for(var i=0; i<word.length; i++){
 //     // word[i]=word[i][0].toUpperCase() + word[i].substring(1)
 //     word[i]=word[i][0].toUpperCase().concat(word[i].substring(1)) //both are same
@@ -14,13 +13,6 @@
 // // cons we can not use outside of this scope ole.log(names)(/,/g," ")
 // console.log(replaces)
 
-
-
-
-
-
-
-
 // var _myName="abdul moiz"
 // var _1my__Name="abdul moiz"
 // var myName="abdul moiz attari"
@@ -31,7 +23,6 @@
 // console.log($myName);
 // console.log(myName)
 
-
 // var _myName="abdul moiz"
 // console.log(_myName);
 // console.log(typeof(_myName))
@@ -40,7 +31,6 @@
 // console.log(typeof(myAge))
 // var thapas;
 // console.log(typeof(thapas))
-
 
 // console.log(6+"4");
 // console.log("10"+10);
@@ -56,7 +46,6 @@
 // console.log(false - true)
 // console.log(false + false)
 // console.log(false)
-
 
 // var iAmUseless=null;
 // console.log(iAmUseless);
@@ -75,9 +64,7 @@
 //     console.log("This is not a valid number")
 // }
 
-
 // console.log( NaN == NaN);
-
 
 // operators and expression
 // var x=5;
@@ -86,8 +73,7 @@
 // console.log('This is x and y' + x == y) result false
 // console.log(`this is an x and y: ${x ==y}`)this is an template literals es6
 
-
-//these are literals example 
+//these are literals example
 // console.log(3+3);
 // console.log(10-2);
 // console.log(10*2);
@@ -99,7 +85,6 @@
 // var b=10
 // var c= a + b
 // console.log(c)
-
 
 // let num=10;
 // let numbers= num++;
@@ -146,12 +131,11 @@
 // //logical Not ! it converts
 // console.log(!( a>b || a==b || a<=b))
 
-
-//string concatination 3rd interview question 
+//string concatination 3rd interview question
 // let firstName="Abdul";
 // let secondName="moiz";
 
-// console.log(firstName +" "+secondName)     
+// console.log(firstName +" "+secondName)
 // console.log(firstName + " Attari")
 // console.log(firstName + " Khanzada")
 // console.log(firstName + " moiz qadri")
@@ -161,17 +145,16 @@
 
 //challanges
 
-// console.log(5**5) //result 3125  backend 5*5*5*5*5 
+// console.log(5**5) //result 3125  backend 5*5*5*5*5
 
 // var a=5;
 // var b=10;
- 
+
 // var c=b; //c=10
 // b=a;  //b=5
 // a=c; //a=10
 // console.log("This is a value of a " +a);
 // console.log("This is a value of b "+ b);
-
 
 // var a=5;
 // var b=10;
@@ -182,7 +165,6 @@
 
 // console.log("a value "+a);
 // console.log("b value "+b);
-
 
 // var a=30;
 // var b=20;
@@ -234,7 +216,6 @@
 // }else{
 //     console.log(`This year ${year} is not leap year`)
 // }
-
 
 //these are falsy values 0 ,"",undefined,null,NaN;  ,Others are truthy values
 //always it run else statment
@@ -306,14 +287,13 @@
 //     num++
 // }
 
-//It will always execute a condition once when the condition will false as below 
+//It will always execute a condition once when the condition will false as below
 // let num=21
 // do{
 // debugger;
 //     console.log(num)
 //     num++
 // }while(num <=10)
-
 
 // for(var num=0; num<=10;num++){
 //     debugger;
@@ -323,18 +303,16 @@
 //we can write any number and get the table till 10(8,9,11,12s)
 // var numb=prompt("write table")
 // for(var i=1;i<=10;i++){
-    // console.log(numb +" x " + i + " = " + numb * i )
+// console.log(numb +" x " + i + " = " + numb * i )
 // }
 // console.log(`${numb} x ${i} = ${numb*i}`) //This is another way via template literals
-
 
 // function sum(a,b){  //<-- This block is parameter
 //     // var a=20, b=20;
 //     let total=a+b
 //     console.log(total)
 // }
-// sum(20,30) //<-- This block is argument 
-
+// sum(20,30) //<-- This block is argument
 
 // function multipy(a,b){
 //     let mul=a*b;
@@ -346,29 +324,27 @@
 
 // function add(a,b) {
 //     let total=a+b;
-//     console.log(total)  
+//     console.log(total)
 // }
 // let results=add(10,50);
 // results;
 
 // function Add(a,b) {
-//    return total=a+b    
+//    return total=a+b
 // }
 
 // let result=Add(20,50);
 // console.log("This is mu addition value " + result)
 
-
-//function expression-->we just put a varaiable to function 
+//function expression-->we just put a varaiable to function
 // function  Adding(a,b,c) {
 //     return total=a+b-c
 // }
 // var result=Adding(25,25,10);
 // console.log("The Answer of A,B and C is " + result)
 
-
-//if we just start from function keyword till {} then it is anaymous function and 
-// if we put varaible name then it will call anaonymus function expression 
+//if we just start from function keyword till {} then it is anaymous function and
+// if we put varaible name then it will call anaonymus function expression
 // var mainFunction=function (a,b) {
 //     return total=a+b;
 // }
@@ -387,7 +363,7 @@
 
 // debugger;
 // let functions=function (a,b) {
-//    return a+b;    
+//    return a+b;
 // }
 // let results=functions(20,100);
 // console.log(results);
@@ -415,11 +391,10 @@
 //  names="Abdul moiz attari";
 //  console.log(names)
 
-
 // function scoping() {
 //     let names="abdul moiz";
 //     console.log(names);
-    
+
 //    if(true){
 //     let lastName="attari";
 //     console.log("Inner scope " + lastName);
@@ -427,9 +402,8 @@
 //    }
 //   console.log("outer " + lastName) //give an error we are calling outside
 // }
-// console.log(names) we can not use outside of this top of scope 
+// console.log(names) we can not use outside of this top of scope
 // scoping()
-
 
 // function reuse() {
 //     let firstName="Abdul";
@@ -437,7 +411,7 @@
 //     firstName="Abdul moiz"
 //     console.log(firstName)
 //     if (true) {
-//        console.log("Now we are inner scope " + firstName)        
+//        console.log("Now we are inner scope " + firstName)
 //        let lastName="Abdul moiz khanzada"
 //        console.log(lastName)
 //     }
@@ -462,18 +436,16 @@
 //if we give one value in argument and req 2 or more then it will give us NaN
 //first value of argument assign to first parameter
 
-
 // function names(a,b=20) {
-//    return a/b;    
+//    return a/b;
 // }
 // console.log(names(27,10))
 //if we write like this in default parameter then it wil get the values of argument only not from parameter value of 20 etc.
 
 // function names(a,b=10) {
-//     return a/b;    
+//     return a/b;
 //  }
 //  console.log(names(27))
-
 
 // console.log(sums())
 // function sums(){
@@ -491,19 +463,16 @@
 // }
 // console.log( arrow())
 
-
 // const arrow=() =>{
 //     let a=20,b=80
 //     return `this is a value of A and B = ${a*b}`
 // }
 // console.log( arrow())
 
-
 // const arrow=() =>{
 //     return `this is a value of A and B = ${(a=10)-(b=100)}`
 // }
 // console.log( arrow())
-
 
 // const arrow=() => `this is a value of A and B = ${(a=500)/(b=100)}`
 
@@ -514,26 +483,21 @@
 // }
 // console.log(arrow(20,30))
 
-
-
-//Array 
+//Array
 
 //new keyword make a new instance of this class
 //let  --> new instance of an array myFriends= new Array  <-- class
 
-
-
 // let myFriends= new Array;  <-- This is an optional now dirctly make an arrray
 // myFriends=["abdul moiz","abdul rafay","abdullah","shahrukh"];
 // console.log(myFriends)
-
 
 // let myNames=["Abdul","Moiz","Khanzada","Attari","Rajput"];
 // individually we access
 // console.log(myNames[1]);
 
 // console.log(myNames[myNames.length -1]);
- // console.log(myNames.length)
+// console.log(myNames.length)
 // debugger;
 // let myNames=["Abdul","Moiz","Khanzada","Attari","Rajput"];
 //  for(let i=0;i<myNames.length;i++){
@@ -564,9 +528,8 @@
 
 //These are for searching
 // let myFriends=["Abdul moiz","Abdul rafay","Abdul Malik","Abdullah","Rizwan","Abdul moiz"];
-// console.log(myFriends.indexOf("Abdul moiz")) --> always give us index number start from 0 
-// console.log(myFriends.indexOf("Abdul moiz",2)) //--> start from 2 index num till go end 
-
+// console.log(myFriends.indexOf("Abdul moiz")) --> always give us index number start from 0
+// console.log(myFriends.indexOf("Abdul moiz",2)) //--> start from 2 index num till go end
 
 //same as indexof but start from last index number
 // let myFriends=["Abdul moiz","Abdul rafay","Abdul Malik","Abdullah","Rizwan","Abdul moiz"];
@@ -577,7 +540,6 @@
 // let myFriends=["Abdul moiz","Abdul rafay","Abdul Malik","Abdullah","Rizwan"];
 // console.log(myFriends.includes("Abdul moiz"))
 // console.log(myFriends.includes("Abdullah",4))
-
 
 // let price=[200,300,340,400,450,700,900,1000];
 // const result=price.find((elements,index,array) =>{
@@ -598,20 +560,18 @@
 // const result=price.findIndex((currentValue) => currentValue < 450)
 // console.log(result)
 
-
 // const result=price.findIndex((currentValue) => currentValue < 100)
 // console.log(result) // result will -1
 
 //find ma condition satisfy nahi hoti ha ha tou undefined
-//findIndex ma condition satisfy nahi hoti ha tou -1 
+//findIndex ma condition satisfy nahi hoti ha tou -1
 
 //filter // retrun new array of containing values
 // let price=[200,300,340,400,450,700,900,1000];
 // const result=price.filter((currentValue,index,array) =>{
 //     return currentValue < 560;
 // })
-// console.log(result)  
-
+// console.log(result)
 
 // let price=[200,300,340,400,450,700,900,1000];
 // const result=price.filter(function(currentvalue){
@@ -626,7 +586,6 @@
 
 // })
 // console.log(result); // result empty []
-
 
 // let para="my name is abdul moiz";
 // let result=para.split(" ")
@@ -701,7 +660,6 @@
 
 // console.log(addMonth)  //it gives us empty[] now because we are not delete anything from an array
 
-
 // const months=['jan','feb','march','april','june','july','augest'];
 
 // const updateMonth=months.splice(2,1,"March")
@@ -718,9 +676,6 @@
 //     console.log("Data does not find")
 // }
 
-
-
-
 // const months=['jan','feb','march','april','june','july','augest'];
 
 // const indexOfMonth=months.indexOf("june");
@@ -735,7 +690,6 @@
 //     console.log("Data does not find")
 // }
 
-
 // const indexOfMonth=months.indexOf("june");
 // console.log(indexOfMonth)
 // if(indexOfMonth != -1){
@@ -749,7 +703,6 @@
 // }
 
 //map() method
-
 
 // const names=["abdul","moiz","khanzada","attari","malik","rafay"];
 
@@ -776,8 +729,7 @@
 // console.log(number);
 
 //The map does not mutating orginal array ,but forEach does
-//we can use w multiple method with map method 
-
+//we can use w multiple method with map method
 
 //challanges
 //square of this numbers
@@ -804,12 +756,11 @@
 // let mul=numbers.map((currentValue) => currentValue*2).filter((currentValue) =>currentValue >10).reduce((accumulator,currentValue) => accumulator +=currentValue);
 // console.log(mul)
 
-
 //reduce method
 // let numbers=[2,4,5,8];
 
 // let result=numbers.reduce((accumulator,currentValue) =>{
-//     //  return currentValue=accumulator + currentValue //we can write like this below 
+//     //  return currentValue=accumulator + currentValue //we can write like this below
 //     return accumulator +=currentValue
 // })
 // console.log(result)
@@ -821,7 +772,6 @@
 //     return accumulator *=currentValue
 // },7);
 // console.log(result)
-
 
 //This is two dimensional 2d array into array we make one dimensional
 // const arr=[
@@ -838,7 +788,7 @@
 // console.log(result)
 // console.log(arr)
 
-//The last nested array is not concatinating.we will see in ES2020 how to concate all values in one array only 
+//The last nested array is not concatinating.we will see in ES2020 how to concate all values in one array only
 // const arr=[
 //     ['zone1','zone2'],
 //     ['zone3','zone4'],
@@ -894,15 +844,13 @@
 // let myName="I am abdul moiz";
 // console.log(myName.lastIndexOf('m',10))
 
-//if string does not find answer will be -1 .In string the space also get index nub also 
-
+//if string does not find answer will be -1 .In string the space also get index nub also
 
 //serach() method.It can not get second position in method as indexof .If answer does not find -1 retrun
 // let myName="I am abdul moiz";
 // let result=myName.search("moiz");
 // console.log(result);
 //retrun the position of the match
-
 
 // let text="My name is abdul moiz and I did intermediate";
 // it will not change original value.The given end argument will not be include.
@@ -913,7 +861,6 @@
 //like here on 0 position M and in 1 y but it will not add remember
 // const result=text.slice(0,1)
 // console.log(result)
-
 
 // const result=text.slice(0,2)
 // console.log(result)
@@ -936,14 +883,13 @@
 // console.log(result)
 // jasa 6 arguments sa la kar end tak retrun karwado
 
-
 // let strings="Abdul moiz, Abdul rafay, Abdul malik";
 // let result = strings.substring(11,-1) //negative shows that it starts from o index number
 // console.log(result)
 
 // let strings="Abdul moiz, Abdul rafay, Abdul malik";
 // let result=strings.substr(0,8);
-// let result=strings.substr(-4); //last 4 character will come in retrun 
+// let result=strings.substr(-4); //last 4 character will come in retrun
 // let result=strings.substr(5,-8); //nothing will come
 // console.log(result)
 
@@ -955,9 +901,8 @@
 // console.log(result)
 // console.log(strings)
 
-
 //charAt() method
-//it retruns the value/string of index number which we give 
+//it retruns the value/string of index number which we give
 // let  strings="abdul moiz, abdul rafay, abdul malik";
 
 // let result=strings.charAt(12);
@@ -994,9 +939,9 @@
 // console.log(fName.concat(lName))
 // console.log(fName.concat(" ",lName)) //if we want to give space in concat method then we will use --> " ",
 
-//trim()remove whitespace from both side 
+//trim()remove whitespace from both side
 // let myName="        abdul moiz       ";
-// let myName="        abdul      moiz       ";// not between the words space will remove 
+// let myName="        abdul      moiz       ";// not between the words space will remove
 // console.log(myName.trim())
 
 // split() method convert string into array
@@ -1019,12 +964,10 @@
 // console.log(currentdate.toLocaleString())//perfect time will give us locally of our country
 // console.log(Date.now())
 
-
 //There are seven arguments in Date object
 // let localTime= new Date(2021,01,1,7,15,30,0);
 // let localTime= new Date(2021,01,1,17,15,30,0);
 // console.log(localTime.toLocaleString())
-
 
 //new Date(datestring)
 // let localTimes= new Date("2021 octubar 20 10:50:45");
@@ -1039,7 +982,6 @@
 // console.log(million)// it will retrun use standered time and since 1970
 // console.log(million.toLocaleString())
 
-
 // let million=new Date(1000000000);
 // let million=new Date(86400000*2) //ak din ma itna second hotee gar do sa multiply karee ga tou 3 ayee ga ,beacuse 1 day ka ha
 // console.log(million.toLocaleString())
@@ -1048,11 +990,10 @@
 // //to get individual data
 // console.log(dates.toLocaleString())
 // console.log(dates.getFullYear())
-// console.log(dates.toLocaleDateString()) 
+// console.log(dates.toLocaleDateString())
 // console.log(dates.getMonth()) //from 0 to 11
 // console.log(dates.getDate())
 // console.log(dates.getDay())
-
 
 //time() get dates
 
@@ -1071,7 +1012,6 @@
 //date and time only
 // let date= new Date().toLocaleString()
 
-
 //There are set() method as well
 
 // now we do math object
@@ -1088,12 +1028,11 @@
 // console.log(Math.pow(2,6))
 
 //give the square root //interview question
-// console.log(Math.sqrt(100)); 
+// console.log(Math.sqrt(100));
 // console.log(Math.sqrt(25));
-// console.log(Math.sqrt(19));            
+// console.log(Math.sqrt(19));
 
 //the math absolute method() allways retrun the positive value
- 
 
 // let numbers=-55;
 // console.log(Math.abs(numbers));
@@ -1101,27 +1040,25 @@
 // console.log(Math.abs(4-10))
 
 // ceill() method give the increaing number
-// console.log(Math.ceil(4.4)) 
-// console.log(Math.ceil(4.58)) 
-// console.log(Math.ceil(4.1)) 
-// console.log(Math.ceil(99.9)) 
-// console.log(Math.round(4.4)) 
+// console.log(Math.ceil(4.4))
+// console.log(Math.ceil(4.58))
+// console.log(Math.ceil(4.1))
+// console.log(Math.ceil(99.9))
+// console.log(Math.round(4.4))
 // console.log(Math.ceil(-4.9)) //-4
 
-
-//floor() method  
-// console.log(Math.floor(4.4)) 
-// console.log(Math.floor(4.9)) 
-// console.log(Math.floor(4.2)) 
-// console.log(Math.floor(4.7)) 
+//floor() method
+// console.log(Math.floor(4.4))
+// console.log(Math.floor(4.9))
+// console.log(Math.floor(4.2))
+// console.log(Math.floor(4.7))
 // console.log(Math.floor(-4.4)) //-5
 
-// min and max method() 
+// min and max method()
 //max find the higest value
 //min find the lowest value
 // console.log(Math.max(0,1,100,-200))// asnwer 100
 // console.log(Math.min(0,100,30,-1000)) //answer -1000
-
 
 //evertime it will give us diff values from 0 to 1
 // console.log(Math.ceil( Math.random()*10))
@@ -1129,9 +1066,9 @@
 // console.log(Math.floor( Math.random()*10))
 
 //math.trunc() retruns the integer ,which is before decimal
- //decimal sa phala values deyee ga kuch bi do chahyee neg and pos
+//decimal sa phala values deyee ga kuch bi do chahyee neg and pos
 // console.log(Math.trunc(4.9))
-// console.log(Math.trunc(99.9)) 
+// console.log(Math.trunc(99.9))
 // console.log(Math.floor(-99.91))
 
 // practice time
@@ -1139,42 +1076,347 @@
 //if in math.trunc(-99) there is negative value it will work like math.ceil() or equavalent
 
 //interview question diff trunc and floor ,trunc ceil and round
- 
+
 //positive
-// console.log(Math.trunc(99.9)) 
+// console.log(Math.trunc(99.9))
 // console.log(Math.floor(99.91))
 // //negative
-// console.log(Math.trunc(-99.9)) 
+// console.log(Math.trunc(-99.9))
 // console.log(Math.ceil(-99.9))
-
 
 // DOM and BOM
 
-//basically Document object Model is the child of windows.And we play in DOM with html elements 
-//and also Browser object Model is the child of windows. 
+//basically Document object Model is the child of windows.And we play in DOM with html elements
+//and also Browser object Model is the child of windows.
 // In Bom we have functions alert/confirm/prompt are the part of BOM ,they are not directly part of document
 
 //BOM Example
 
 // alert(location.href)  //give the current website address
 // if (confirm("Want to Visit GOOGLE")) {
-//    location.href=("https://www.google.com/")    //redirect to above website to this website 
+//    location.href=("https://www.google.com/")    //redirect to above website to this website
 // }
 
-
-
-//In DOM 
+//In DOM
 //we can check that whether an element has child node or not?
 // via .haschildNodes()
 
 //how to find child in DOM Tree
 // four ways
 
-
 //DOM
 // console.log( document.getElementsByClassName('para'))
 // console.log( document.getElementsByTagName('p'))
 
-
 // console.log(document.getElementsByName('gender'))
 
+//  function mouseDown() {
+//      document.getElementById("p").style.color= "blue"
+//  }
+//  function mouseUp() {
+//      document.getElementById("p").style.color="red"
+//  }
+
+// obejct
+
+// const Obj={
+//     myName: "Abdul moiz",
+//     myAge: 20,
+//     getDate () {
+//         console.log(`My Name is ${Obj.myName} and my age is ${Obj.myAge}`)
+//     }
+// }
+
+// Obj.getDate()
+// console.log(Obj.myName)
+
+// const Obj={
+//     myName: {
+//         firstName: "Abdul",
+//         lastName: "Moiz"
+//     },
+//     myAge: 20,
+//     getDate () {
+//         console.log(`My Name is ${Obj.myName} and my age is ${Obj.myAge}`)
+//     }
+// }
+
+// console.log(Obj.myName.lastName)
+// const {firstName,lastName}=Obj.myName
+// console.log(lastName)
+// console.log(Obj.myName)
+
+//this
+// function Func() {
+//        console.log(this)
+// }
+// Func()
+
+//when we used  arrow function then "this" retrun window global obejct not this current obejct
+// const Obj={
+//     myName: "Abdul moiz",
+//     myAge: 20,
+//     getDate: () => {
+//         console.log(this)
+//     }
+// }
+
+// Obj.getDate()
+// console.log(Obj)
+
+// console.log(Obj.myName)
+
+// let bigData={
+//      myName:{
+//        firstName: "Abdul",
+//        secondName: "moiz"
+//     },
+//     myAge: 23,
+//     getDate(){
+//         console.log(`My Name is ${this.myName.firstName} and age is ${this.myAge}`)
+//     }
+// }
+
+// bigData.getDate()
+
+//Array Destructure
+
+// const myBioData = ["Abdul moiz", "Zafar Ali", 20];
+// let firstName = myBioData[0];
+// let FatherName = myBioData[1];
+
+// let [fullName, FatherName, age, myDegree = "MSC"] = myBioData;
+// console.log(myDegree);
+
+// const myBioData = {
+//   myName: "Abdul moiz",
+//   myFather: "zafar Ali",
+//   myAge: 12,
+// };
+
+// let { myName, myFather, myAge } = myBioData;
+// console.log(myFather);
+
+//Obejct Properties dynamic,we can access inside object of outsider variable via []
+// let name = "Abdul moiz";
+
+// const obj = {
+//   [name]: " hello again Abdul moiz khanzad",
+//   [28 + 8]: "hahaha",
+// };
+
+// console.log(obj);
+
+// //
+// const names = "Abdul moiz";
+// const age = 25;
+
+// //simple method
+// // const Obj = {
+// //   names: names,
+// //   age: age,
+// // };
+
+// //if key and value are same then we can write one only it inherit
+
+// const Obj = {
+//   names,
+//   age,
+// };
+// console.log(Obj);
+
+//spread operators
+
+// const colors = ["red", "green", "blue", "orange", "black"];
+// const updateColor = [...colors, "Multired", "Pink"];
+// const updatingColors = [...updateColor, "yellow"];
+// console.log(updatingColors);
+
+// const Obj = {
+//   names: "moiz",
+//   last: "attari",
+// };
+// const Obj1 = {
+//   ...Obj,
+//   //   age: 23,
+// };
+// console.log(Obj1);
+
+//ES6
+// const colors = ["red", "green", "blue", "orange", "black"];
+// Array.prototype.includes();
+// console.log(colors.includes("blue"));
+
+//ES7
+// it introdues string padding padstart and padend
+
+//after 10 character it will give the 8 space , it is for adding
+// const Name = "abdul moiz".padStart(14);
+// console.log(Name);
+// //it is used for removing spave from starting
+// const remove = Name.trimStart();
+// console.log(remove);
+
+//same here after 10 chartacetrs then it will give 8 space
+// const Name = "abdul moiz".padEnd(18);
+// console.log(Name);
+
+//object.values and object.entries
+// const obj = {
+//   names: "Abdul moiz",
+//   age: 15,
+// };
+// console.log(Object.values(obj)); //get the values of keys in array
+
+//object.entries
+// const obj = {
+//   names: "Abdul moiz",
+//   age: 15,
+// };
+// console.log(Object.entries(obj)); //reruns array
+// const realObj = Object.entries(obj);
+// // it coverts array from object;
+// it retruns also in array  but it divides in two array like ["name","Abdul moiz"]
+
+// console.log(Object.fromEntries(realObj)); //retruns obj
+
+//Es2019
+// we used array reduce to make two dimensional array in one ,we also used to multip and add sup
+// const reduce = [
+//   ["zone1", "zone2"],
+//   ["zone1", "zone2"],
+//   ["zone1", "zone2"],
+//   ["zone1", "zone2"],
+//   ["zone1", "zone2", ["zone3, zone4"]],
+// ];
+// console.log(Object.entries(reduce));
+// console.log(Object.fromEntries(reduce));
+
+// const result = reduce.reduce((acc, currValue) => {
+//   return acc.concat(currValue);
+// });
+// console.log(result);
+
+//flat() method
+// it makes one dimensional as much as array inside an array
+// console.log(reduce.flat(2));
+// console.log(reduce.flat(2));
+// console.log(reduce.flat(Infinity));
+
+//bigInt
+//for bigger number
+// let numb = Number.MAX_SAFE_INTEGER;
+// console.log(numb + 10);
+// let big = 100000000n + 12n;
+// console.log(typeof big);
+
+//UseStrict
+// ("use strict");
+// x = 20;
+// console.log(x); //it retruns as error we must type like this "let x-20";
+
+// These are as a call back function beacuse we are passing as an argument
+// function sum(a, b) {
+//   return a + b;
+// }
+// function sub(a, b) {
+//   return Math.abs(a - b);
+// }
+// function mul(a, b) {
+//   return a * b;
+// }
+
+// //This is an high order function
+// const calcu = (num1, num2, operator) => {
+//   return operator(num1, num2);
+// };
+// console.log(calcu(4, 2, sum));
+
+//cal back func and highorder Function
+//This is  callback func beacuse it is pasing as an arguments in another func
+// function add(a, b) {
+//   return a + b;
+// }
+// function multi(a, b) {
+//   return a * b;
+// }
+// function sum(a, b) {
+//   return Math.abs(a - b);
+// }
+// //This is HOF beacuse it is accepting the another func as an arguments
+// const calculator = (num1, num2, operator) => {
+//   return operator(num1, num2);
+// };
+// console.log(calculator(5, 5, multi));
+
+//lexical scope ma child parent ka var method para ko access kar skatha ha magar ya vice versa nahi ha, parent child ka varaibel ko acces nahu kar saktha ha
+
+// const firstFunc = () => {
+//   let b = 10;
+//   function secondFunc() {
+//     let a = 20;
+//     console.log(a * b);
+//   }
+//   secondFunc();
+// };
+// firstFunc();
+
+//or closue bi kcuh lexical ki tarha ka ha
+//first creation then  execute
+
+// const firstFunc = (c) => {
+//   let b = 10;
+//   function secondFunc() {
+//     let a = 20;
+//     console.log(a * b - c);
+//   }
+//   return secondFunc;
+// };
+// let clousreFunc = firstFunc(10);
+// console.dir(clousreFunc());
+
+//we can use Strict
+// when we used "use strict" then it stops us wrong way of writing code
+"use strict";
+// x = 10;
+// console.log(x);
+
+// let x = 10;
+// console.log(x);
+
+// carrying means we have mutiple arguments of single function till our all argu are not fulfilled
+
+// function sum(num1) {
+//   // console.log(num1);
+//   return function (num2) {
+//     // console.log(num1, num2);
+//     return function (num3) {
+//       console.log(num1 + num2 + num3);
+//     };
+//   };
+// }
+// sum(8)(7)(9);
+
+//we can write in one line
+
+// const sum = (num1) => (num2) => (num3) => console.log(num1 + num2 + num3);
+// sum(8)(7)(9);
+
+// JSON   to covert into json format
+
+let jsonObj = {
+  key1: "Abdul moiz",
+  key2: "Abdul Rfay",
+  key3: "Abdul Malik",
+};
+
+let convertJson = JSON.stringify(jsonObj);
+console.log(convertJson);
+console.log(typeof convertJson); //data type will be string
+
+// covert json into JS object
+
+let jsobject = JSON.parse(convertJson);
+console.log(jsobject);
+console.log(typeof jsobject);
+console.table(jsobject);
