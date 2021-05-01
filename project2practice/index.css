@@ -1,0 +1,23 @@
+body{
+    background-color: rgba(255,218,185, 0.9);
+}
+#myImage{
+    width: 30%;
+    margin: auto;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+}
+.firstbutton{
+    position: absolute;
+    top: 80%;
+    left: 40%
+}
+button{
+ display: grid;
+ place-items: center;
+ box-sizing: border-box;
+ position: absolute;
+ top: 80%;
+ left: 50%;
+}
