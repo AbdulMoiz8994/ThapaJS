@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    background-color: royalblue;
+}
+.main-dv{
+    width: 70vw;
+    margin: 200px auto;
+}
+.h1{
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
