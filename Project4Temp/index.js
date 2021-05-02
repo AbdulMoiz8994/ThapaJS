@@ -4,6 +4,7 @@
 const tempload=() =>{
   const temp=document.getElementById("temp")  
   temp.innerHTML='&#xf2cb;'
+  temp.style='white'
 
   window.setTimeout(() => {
       temp.innerHTML='&#xf2ca;'
@@ -29,10 +30,10 @@ window.setTimeout(() => {
 
 
 }
+
 tempload()
 // /after runing this below setInterval function it will re-render our tempload function 
 window.setInterval(() =>{
     tempload()
-    temp.style='white'
 },5000)
 
