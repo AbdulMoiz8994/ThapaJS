@@ -30,7 +30,7 @@ window.setTimeout(() => {
 
 }
 tempload()
-
+// /after runing this below setInterval function it will re-render our tempload function 
 window.setInterval(() =>{
     tempload()
     temp.style='white'
