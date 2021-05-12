@@ -1,0 +1,14 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(176,196,222, 0.9);
+}
+.main-div{
+    text-align: center;    
+    margin: 150px auto;
+    width: 80%;
+    font-size: 50px;   
+}
