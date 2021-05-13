@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- <div class="main-div"> -->
+        <h1>Please Enter the number which you would like to convert</h1>
+        <form onsubmit="onSubmitFunc(); return false">
+           <input type="number" name="temp" id="temp">
+           <select id="tem-diff" name="tem-diff">
+               <option value="cel">&#8451;elsius</option>
+               <option value="fah">&#8457;ahrenheit</option>
+           </select>
+           <button type="submit">Submit</button>
+           <span id="resultContainer"></span>
+
+        </form>
+
+    <!-- </div> -->
+    <script src="./indextemp.js"></script>
+</body>
+</html>
