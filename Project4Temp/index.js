@@ -36,4 +36,3 @@ tempload()
 window.setInterval(() =>{
     tempload()
 },5000)
-
